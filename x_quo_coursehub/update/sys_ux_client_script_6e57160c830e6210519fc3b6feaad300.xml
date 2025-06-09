@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Default">674d4dfb83f52210519fc3b6feaad3fe</macroponent>
+        <name>subscribe_button/now_default/isHidden</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+  * @param {params} params
+  * @param {api} params.api
+  * @param {TransformApiHelpers} params.helpers
+  */
+function evaluateProperty({api, helpers}) {
+  // Get the current course id from the repeater
+  const courseId = api.item.value.sys_id.value;
+
+  // Get the list of subscriptions
+  const subscriptions = api.data.course_subscriptions.results;
+
+  console.log(subscriptions);
+
+  // Check if this course's ID is in the list of subscriptions
+  const isSubscribed = subscriptions.some(sub => sub.course.value === courseId);
+
+  return isSubscribed;
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-05 18:23:10</sys_created_on>
+        <sys_id>6e57160c830e6210519fc3b6feaad300</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>subscribe_button/now_default/isHidden</sys_name>
+        <sys_package display_value="CourseHub" source="x_quo_coursehub">d7affc501bf0ded0afce657a234bcb67</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</sys_scope>
+        <sys_update_name>sys_ux_client_script_6e57160c830e6210519fc3b6feaad300</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-08 22:01:21</sys_updated_on>
+        <target>macroponent</target>
+        <type>transform</type>
+    </sys_ux_client_script>
+</record_update>

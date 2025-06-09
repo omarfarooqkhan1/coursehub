@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="DELETE">
+        <app_config display_value="Qdx Course Hub">921c4a8683bde6107969ba29feaad33f</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>List of available courses</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>courses</route_type>
+        <screen_type display_value="List of available courses">64cd103383352210519fc3b6feaad3b8</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 14:27:05</sys_created_on>
+        <sys_id>a8cd103383352210519fc3b6feaad3bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List of available courses</sys_name>
+        <sys_package display_value="CourseHub" source="x_quo_coursehub">d7affc501bf0ded0afce657a234bcb67</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</sys_scope>
+        <sys_update_name>sys_ux_app_route_a8cd103383352210519fc3b6feaad3bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 14:27:05</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="DELETE" query="documentkey=a8cd103383352210519fc3b6feaad3bb"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</application>
+        <file_path/>
+        <instance_id>1376755deb91225ce483f459bad0cd86</instance_id>
+        <instance_name>dev341118</instance_name>
+        <name>sys_ux_app_route_a8cd103383352210519fc3b6feaad3bb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route"><sys_ux_app_route action="INSERT_OR_UPDATE"><app_config display_value="Qdx Course Hub">921c4a8683bde6107969ba29feaad33f</app_config><description/><extension_point/><fields/><icon/><name>List of available courses</name><optional_parameters/><order>0</order><parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent><parent_macroponent_composition_element_id/><route_type>courses</route_type><screen_type display_value="List of available courses">64cd103383352210519fc3b6feaad3b8</screen_type><sys_class_name>sys_ux_app_route</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-06-04 14:27:05</sys_created_on><sys_id>a8cd103383352210519fc3b6feaad3bb</sys_id><sys_mod_count>0</sys_mod_count><sys_name>List of available courses</sys_name><sys_package display_value="CourseHub" source="x_quo_coursehub">d7affc501bf0ded0afce657a234bcb67</sys_package><sys_policy/><sys_scope display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</sys_scope><sys_update_name>sys_ux_app_route_a8cd103383352210519fc3b6feaad3bb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-06-04 14:27:05</sys_updated_on></sys_ux_app_route><sys_translated_text action="delete_multiple" query="documentkey=a8cd103383352210519fc3b6feaad3bb"/></record_update>]]></payload>
+        <payload_hash>1990164545</payload_hash>
+        <record_name>List of available courses</record_name>
+        <reverted_from/>
+        <source>a6dd3fa383712210519fc3b6feaad36b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 14:27:05</sys_created_on>
+        <sys_id>a4cdd07383352210519fc3b6feaad3ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1973b56ad6a0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 14:27:05</sys_updated_on>
+        <type>UX App Route</type>
+        <update_guid>68cdd073ef3522109cc96ab705ffdfc9</update_guid>
+        <update_guid_history>68cdd073ef3522109cc96ab705ffdfc9:1990164545</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 17:54:06</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_app_route">sys_ux_app_route</sys_db_object>
+        <sys_id>e27de9dec5f344fe911d7a895dd437c4</sys_id>
+        <sys_metadata>a8cd103383352210519fc3b6feaad3bb</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List of available courses</sys_name>
+        <sys_package display_value="CourseHub" source="x_quo_coursehub">d7affc501bf0ded0afce657a234bcb67</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</sys_scope>
+        <sys_scope_delete display_value="">000122c0f5d3422480b2ea6a41b8cf10</sys_scope_delete>
+        <sys_update_name>sys_ux_app_route_a8cd103383352210519fc3b6feaad3bb</sys_update_name>
+        <sys_update_version display_value="sys_ux_app_route_a8cd103383352210519fc3b6feaad3bb">a4cdd07383352210519fc3b6feaad3ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 17:54:06</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

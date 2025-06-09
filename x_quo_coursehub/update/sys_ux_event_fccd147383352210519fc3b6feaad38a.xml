@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_event">
+    <sys_ux_event action="INSERT_OR_UPDATE">
+        <description/>
+        <event_name>CONTENT_UPDATED_RELAY_accdd07383352210519fc3b6feaad3ca</event_name>
+        <explicit_api_name/>
+        <interfaces/>
+        <label>Content updated relay</label>
+        <props>[
+    {
+        "fieldType": "json",
+        "label": "Optional parameters",
+        "name": "params",
+        "valueType": "string"
+    }
+]</props>
+        <required_translations>[ {
+  "message" : "Optional parameters",
+  "comment" : ""
+} ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <sys_class_name>sys_ux_event</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-04 14:27:07</sys_created_on>
+        <sys_id>fccd147383352210519fc3b6feaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Content updated relay</sys_name>
+        <sys_package display_value="CourseHub" source="x_quo_coursehub">d7affc501bf0ded0afce657a234bcb67</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</sys_scope>
+        <sys_update_name>sys_ux_event_fccd147383352210519fc3b6feaad38a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-04 14:27:07</sys_updated_on>
+    </sys_ux_event>
+    <sys_translated_text action="delete_multiple" query="documentkey=fccd147383352210519fc3b6feaad38a"/>
+</record_update>

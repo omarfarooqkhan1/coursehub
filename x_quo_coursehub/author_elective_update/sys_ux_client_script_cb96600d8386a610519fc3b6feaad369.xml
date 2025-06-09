@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="DELETE">
+        <controller_preset/>
+        <includes/>
+        <macroponent display_value="Home - default">d98c0a0a83bde6107969ba29feaad301</macroponent>
+        <name>Validate Username</name>
+        <preset/>
+        <required_translations>[]</required_translations>
+        <script><![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    if (!api.state.learnerId) {
+        // Show alert if no user selected
+        
+    } else {
+        api.navigateToPage({
+            page: "courses",
+            params: {
+                learnerId: api.state.learnerId
+            }
+        });
+    }
+]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-08 13:38:48</sys_created_on>
+        <sys_id>cb96600d8386a610519fc3b6feaad369</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Validate Username</sys_name>
+        <sys_package display_value="CourseHub" source="x_quo_coursehub">d7affc501bf0ded0afce657a234bcb67</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</sys_scope>
+        <sys_update_name>sys_ux_client_script_cb96600d8386a610519fc3b6feaad369</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-08 16:22:53</sys_updated_on>
+        <target>macroponent</target>
+        <type>default</type>
+    </sys_ux_client_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</application>
+        <file_path/>
+        <instance_id>1376755deb91225ce483f459bad0cd86</instance_id>
+        <instance_name>dev341118</instance_name>
+        <name>sys_ux_client_script_cb96600d8386a610519fc3b6feaad369</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_ux_client_script"&gt;&lt;sys_ux_client_script action="INSERT_OR_UPDATE"&gt;&lt;controller_preset/&gt;&lt;includes/&gt;&lt;macroponent display_value="Home - default"&gt;d98c0a0a83bde6107969ba29feaad301&lt;/macroponent&gt;&lt;name&gt;Validate Username&lt;/name&gt;&lt;preset/&gt;&lt;required_translations&gt;[]&lt;/required_translations&gt;&lt;script&gt;&lt;![CDATA[/**
+* @param {params} params
+* @param {api} params.api
+* @param {any} params.event
+* @param {any} params.imports
+* @param {ApiHelpers} params.helpers
+*/
+function handler({api, event, helpers, imports}) {
+    if (!api.state.learnerId) {
+        // Show alert if no user selected
+        
+    } else {
+        api.navigateToPage({
+            page: "courses",
+            params: {
+                learnerId: api.state.learnerId
+            }
+        });
+    }
+]]&gt;&lt;/script&gt;&lt;script_api_version&gt;2.0.0&lt;/script_api_version&gt;&lt;sys_class_name&gt;sys_ux_client_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-08 13:38:48&lt;/sys_created_on&gt;&lt;sys_id&gt;cb96600d8386a610519fc3b6feaad369&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Validate Username&lt;/sys_name&gt;&lt;sys_package display_value="CourseHub" source="x_quo_coursehub"&gt;d7affc501bf0ded0afce657a234bcb67&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CourseHub"&gt;d7affc501bf0ded0afce657a234bcb67&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_ux_client_script_cb96600d8386a610519fc3b6feaad369&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-08 16:22:53&lt;/sys_updated_on&gt;&lt;target&gt;macroponent&lt;/target&gt;&lt;type&gt;default&lt;/type&gt;&lt;/sys_ux_client_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1049924797</payload_hash>
+        <record_name>Validate Username</record_name>
+        <reverted_from/>
+        <source>a6dd3fa383712210519fc3b6feaad36b</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-08 16:22:53</sys_created_on>
+        <sys_id>f39ed50183caa610519fc3b6feaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>197505a22a80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-08 16:22:53</sys_updated_on>
+        <type>UX Client Script</type>
+        <update_guid>7b9ed5016ecaa610e0b3ff0919aadbb0</update_guid>
+        <update_guid_history>7b9ed5016ecaa610e0b3ff0919aadbb0:1049924797,c752d9414f8aa6108aa0360264d1faa7:-757765395,19197881ff0aa610edd028381e590a91:1117338334,84197441740aa6103161d222768734c7:-1227079727</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-08 16:30:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_client_script">sys_ux_client_script</sys_db_object>
+        <sys_id>c5a38d9b665d442c9c475f4753c60999</sys_id>
+        <sys_metadata>cb96600d8386a610519fc3b6feaad369</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Username</sys_name>
+        <sys_package display_value="CourseHub" source="x_quo_coursehub">d7affc501bf0ded0afce657a234bcb67</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</sys_scope>
+        <sys_scope_delete display_value="">000122c0f5d3422480b2ea6a41b8cf10</sys_scope_delete>
+        <sys_update_name>sys_ux_client_script_cb96600d8386a610519fc3b6feaad369</sys_update_name>
+        <sys_update_version display_value="sys_ux_client_script_cb96600d8386a610519fc3b6feaad369">f39ed50183caa610519fc3b6feaad3b1</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-08 16:30:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

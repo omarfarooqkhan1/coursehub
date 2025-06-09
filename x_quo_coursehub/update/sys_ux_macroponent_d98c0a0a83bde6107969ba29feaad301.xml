@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_macroponent">
     <sys_ux_macroponent action="INSERT_OR_UPDATE">
         <associated_types/>
-        <bundles>[]</bundles>
+        <bundles>[
+    {
+        "definitionId": "d6c0f4f531825510f8773d3775164e01",
+        "instanceId": "form_1",
+        "name": "Form 1",
+        "useByReference": false
+    }
+]</bundles>
         <category>page</category>
         <component_dependencies/>
         <composition>[
@@ -35,11 +42,83 @@
                         "composition": [
                             {
                                 "definition": {
+                                    "id": "211969ddfcc5e7050fcfa6cc019e9c8f",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "avatar_1",
+                                "elementLabel": "Avatar 1",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "hideTooltip": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "href": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "https://www.servicenow.com/"
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "book-fill"
+                                    },
+                                    "imageSrc": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "interaction": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "none"
+                                    },
+                                    "opensWindow": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "presence": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "xl"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "CourseHub Logo"
+                                        }
+                                    },
+                                    "userName": {
+                                        "type": "JSON_LITERAL",
+                                        "value": ""
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "align-self": "center",
+                                        "background": "rgb(var(--now-color--interactive-2))",
+                                        "margin-top": "5rem"
+                                    }
+                                }
+                            },
+                            {
+                                "definition": {
                                     "id": "1f6e0643eca7a637e36bd7833549ec9e",
                                     "type": "MACROPONENT"
                                 },
-                                "elementId": "heading_1",
-                                "elementLabel": "Heading 1",
+                                "elementId": "title",
+                                "elementLabel": "Title",
                                 "eventMappings": [],
                                 "isHidden": {
                                     "type": "JSON_LITERAL",
@@ -56,7 +135,7 @@
                                         "value": {
                                             "code": null,
                                             "comment": "",
-                                            "message": "We make course subscription workflow FUN"
+                                            "message": "Welcome to CourseHub"
                                         }
                                     },
                                     "level": {
@@ -65,7 +144,7 @@
                                     },
                                     "variant": {
                                         "type": "JSON_LITERAL",
-                                        "value": "header-primary"
+                                        "value": "header-hero"
                                     },
                                     "wontWrap": {
                                         "type": "JSON_LITERAL",
@@ -75,8 +154,837 @@
                                 "slot": null,
                                 "styles": {
                                     "default": {
-                                        "padding-left": "var(--now-scalable-space--md)",
-                                        "padding-right": "var(--now-scalable-space--md)"
+                                        "align-self": "center",
+                                        "background": "rgb(var(--now-color_brand--secondary))",
+                                        "margin-top": "0",
+                                        "padding-left": "var(--now-scalable-space--3xl)",
+                                        "padding-right": "var(--now-scalable-space--3xl)",
+                                        "padding-top": "var(--now-scalable-space--xl)"
+                                    }
+                                }
+                            },
+                            {
+                                "definition": {
+                                    "id": "bb0f92e8d7eff1590624bfe69d316f23",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "search_box",
+                                "elementLabel": "Search Box",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "fHdogvfkBkErjjlaaISejeehhOdffY",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_input.NOW_INPUT#INPUT",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_input.NOW_INPUT#INPUT",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "container": {
+                                                            "propName": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "searchText"
+                                                            },
+                                                            "value": {
+                                                                "binding": {
+                                                                    "address": [
+                                                                        "fieldValue"
+                                                                    ]
+                                                                },
+                                                                "type": "EVENT_PAYLOAD_BINDING"
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "ddfftKIPgVAaaVBjjaIBTEFreeddrvG",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": {
+                                                    "dataBrokerId": "b997a84053021010cbc2ddeeff7b1228",
+                                                    "operationName": "REFRESH",
+                                                    "parentResourceId": "fetch_all_learners",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {}
+                                                    }
+                                                },
+                                                "targetId": "XddkiYeehhbZDUBbeeddOiiCdMjelJsA",
+                                                "type": "DATABROKER_OP"
+                                            },
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                    "payload": {
+                                                        "type": "JSON_LITERAL",
+                                                        "value": {
+                                                            "propName": "showResults",
+                                                            "value": "true"
+                                                        }
+                                                    },
+                                                    "sysId": "32408b42ff7a10109046e490703bf176"
+                                                },
+                                                "operation": null,
+                                                "targetId": "rTRggyfffBAkGJeeddGgNIoIJSLyg",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": {
+                                    "type": "JSON_LITERAL",
+                                    "value": null
+                                },
+                                "preset": null,
+                                "propertyValues": {
+                                    "align": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "autofocus": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "enableCaretSlot": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "fieldLayout": {
+                                        "type": "JSON_LITERAL",
+                                        "value": {
+                                            "layout": "vertical"
+                                        }
+                                    },
+                                    "helperContent": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "hideRequiredIndicator": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "invalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Enter your username"
+                                        }
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "manageInvalid": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "manageValue": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "max": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "maxlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "messages": {
+                                        "container": [],
+                                        "type": "LIST_CONTAINER"
+                                    },
+                                    "min": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "minlength": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "multiple": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "name": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "Username"
+                                    },
+                                    "optional": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "pattern": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "placeholder": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Type your name..."
+                                        }
+                                    },
+                                    "readonly": {
+                                        "type": "JSON_LITERAL",
+                                        "value": false
+                                    },
+                                    "required": {
+                                        "type": "JSON_LITERAL",
+                                        "value": true
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "md"
+                                    },
+                                    "step": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "any"
+                                    },
+                                    "type": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "text"
+                                    },
+                                    "value": {
+                                        "binding": {
+                                            "address": [
+                                                "searchText"
+                                            ]
+                                        },
+                                        "type": "STATE_BINDING"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "align-self": "center",
+                                        "border-color": "rgb(var(--now-color_surface--brand-3))",
+                                        "border-style": "solid",
+                                        "border-width": "var(--now-static-space--xxs)",
+                                        "padding-bottom": "var(--now-scalable-space--lg)",
+                                        "padding-left": "var(--now-scalable-space--lg)",
+                                        "padding-right": "var(--now-scalable-space--lg)",
+                                        "padding-top": "var(--now-scalable-space--lg)",
+                                        "width": "420px"
+                                    }
+                                }
+                            },
+                            {
+                                "definition": {
+                                    "id": "REPEATER",
+                                    "type": "REPEATER"
+                                },
+                                "elementId": "search_results",
+                                "elementLabel": "Search Results",
+                                "eventMappings": [],
+                                "isHidden": {
+                                    "script": {
+                                        "apiVersion": "2.0.0",
+                                        "controllerElementId": null,
+                                        "inlineScript": null,
+                                        "scriptSysId": "737cf045830aa610519fc3b6feaad385",
+                                        "target": null
+                                    },
+                                    "type": "CLIENT_TRANSFORM_SCRIPT"
+                                },
+                                "overrides": {
+                                    "composition": [
+                                        {
+                                            "definition": {
+                                                "id": "67d8bc45906c355a3100c0782f45487b",
+                                                "type": "MACROPONENT"
+                                            },
+                                            "elementId": "search_result",
+                                            "elementLabel": "Search Result",
+                                            "eventMappings": [
+                                                {
+                                                    "eventMappingId": "PddLEcPGPCkeNeeddCcMGoUeeddeehheeAC",
+                                                    "isConfiguration": false,
+                                                    "offRowStorageId": null,
+                                                    "sourceEventApiName": "sn_button.NOW_BUTTON_BARE#CLICKED",
+                                                    "sourceEventCorrelationId": null,
+                                                    "sourceEventDefinition": {
+                                                        "apiName": "sn_button.NOW_BUTTON_BARE#CLICKED",
+                                                        "id": null,
+                                                        "type": "UXEVENT"
+                                                    },
+                                                    "sourceEventSysId": null,
+                                                    "targets": [
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                "payload": {
+                                                                    "container": {
+                                                                        "propName": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "searchText"
+                                                                        },
+                                                                        "value": {
+                                                                            "transform": {
+                                                                                "operands": {
+                                                                                    "container": [
+                                                                                        {
+                                                                                            "binding": {
+                                                                                                "address": [
+                                                                                                    "user_account",
+                                                                                                    "displayValue"
+                                                                                                ],
+                                                                                                "category": "value"
+                                                                                            },
+                                                                                            "type": "REPEATER_ITEM_BINDING"
+                                                                                        },
+                                                                                        {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": " ("
+                                                                                        },
+                                                                                        {
+                                                                                            "binding": {
+                                                                                                "address": [
+                                                                                                    "user_account",
+                                                                                                    "_reference",
+                                                                                                    "email",
+                                                                                                    "displayValue"
+                                                                                                ],
+                                                                                                "category": "value"
+                                                                                            },
+                                                                                            "type": "REPEATER_ITEM_BINDING"
+                                                                                        },
+                                                                                        {
+                                                                                            "type": "JSON_LITERAL",
+                                                                                            "value": ")"
+                                                                                        }
+                                                                                    ],
+                                                                                    "type": "LIST_CONTAINER"
+                                                                                },
+                                                                                "operator": "CONCAT"
+                                                                            },
+                                                                            "type": "CLIENT_TRANSFORM"
+                                                                        }
+                                                                    },
+                                                                    "type": "MAP_CONTAINER"
+                                                                },
+                                                                "sysId": "32408b42ff7a10109046e490703bf176"
+                                                            },
+                                                            "operation": null,
+                                                            "targetId": "hhSyiiuPffiiCkSNjjWMOoszCBVhl",
+                                                            "type": "EVENT"
+                                                        },
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                "payload": {
+                                                                    "container": {
+                                                                        "propName": {
+                                                                            "type": "JSON_LITERAL",
+                                                                            "value": "learnerId"
+                                                                        },
+                                                                        "value": {
+                                                                            "binding": {
+                                                                                "address": [
+                                                                                    "sys_id",
+                                                                                    "displayValue"
+                                                                                ],
+                                                                                "category": "value"
+                                                                            },
+                                                                            "type": "REPEATER_ITEM_BINDING"
+                                                                        }
+                                                                    },
+                                                                    "type": "MAP_CONTAINER"
+                                                                },
+                                                                "sysId": "32408b42ff7a10109046e490703bf176"
+                                                            },
+                                                            "operation": null,
+                                                            "targetId": "bbgdNpvydDkleehhjjxcBcfHmRjRA",
+                                                            "type": "EVENT"
+                                                        },
+                                                        {
+                                                            "broker": null,
+                                                            "clientScript": null,
+                                                            "conditional": null,
+                                                            "declarativeAction": null,
+                                                            "event": {
+                                                                "apiName": "sn_uxf.MACROPONENT_STATE_UPDATE_REQUESTED",
+                                                                "payload": {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": {
+                                                                        "propName": "showResults",
+                                                                        "value": "false"
+                                                                    }
+                                                                },
+                                                                "sysId": "32408b42ff7a10109046e490703bf176"
+                                                            },
+                                                            "operation": null,
+                                                            "targetId": "gghyuRfPzDkKFjjeeddUPfCvdddgglM",
+                                                            "type": "EVENT"
+                                                        }
+                                                    ]
+                                                }
+                                            ],
+                                            "isHidden": {
+                                                "type": "JSON_LITERAL",
+                                                "value": null
+                                            },
+                                            "preset": null,
+                                            "propertyValues": {
+                                                "animatedIconEnd": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "animatedIconStart": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "configAria": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "disabled": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "hideBlockPadding": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "highContrast": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "iconEnd": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "iconStart": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "label": {
+                                                    "transform": {
+                                                        "operands": {
+                                                            "container": [
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "user_account",
+                                                                            "displayValue"
+                                                                        ],
+                                                                        "category": "value"
+                                                                    },
+                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                },
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": " ("
+                                                                },
+                                                                {
+                                                                    "binding": {
+                                                                        "address": [
+                                                                            "user_account",
+                                                                            "_reference",
+                                                                            "email",
+                                                                            "displayValue"
+                                                                        ],
+                                                                        "category": "value"
+                                                                    },
+                                                                    "type": "REPEATER_ITEM_BINDING"
+                                                                },
+                                                                {
+                                                                    "type": "JSON_LITERAL",
+                                                                    "value": ")"
+                                                                }
+                                                            ],
+                                                            "type": "LIST_CONTAINER"
+                                                        },
+                                                        "operator": "CONCAT"
+                                                    },
+                                                    "type": "CLIENT_TRANSFORM"
+                                                },
+                                                "landmark": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": null
+                                                },
+                                                "showInlinePadding": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": false
+                                                },
+                                                "size": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "md"
+                                                },
+                                                "variant": {
+                                                    "type": "JSON_LITERAL",
+                                                    "value": "primary"
+                                                }
+                                            },
+                                            "slot": null,
+                                            "styles": null
+                                        }
+                                    ],
+                                    "layout": {
+                                        "default": {
+                                            "children": null,
+                                            "items": [
+                                                {
+                                                    "element_id": "search_result"
+                                                }
+                                            ],
+                                            "root": null,
+                                            "rules": null,
+                                            "styles": {
+                                                "align-items": "center",
+                                                "display": "flex",
+                                                "flex-direction": "column"
+                                            },
+                                            "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
+                                            "type": "flex"
+                                        },
+                                        "version": "3.0.0"
+                                    }
+                                },
+                                "preset": null,
+                                "propertyValues": {},
+                                "repeatWith": {
+                                    "binding": {
+                                        "address": [
+                                            "fetch_all_learners",
+                                            "results"
+                                        ]
+                                    },
+                                    "type": "DATA_OUTPUT_BINDING"
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {}
+                                }
+                            },
+                            {
+                                "definition": {
+                                    "id": "d37ce8abca89d02905fed903c8e34d8e",
+                                    "type": "MACROPONENT"
+                                },
+                                "elementId": "login_button",
+                                "elementLabel": "Login Button",
+                                "eventMappings": [
+                                    {
+                                        "eventMappingId": "ijjcTfgBCDkEwjjdcGqjtxQLhhF",
+                                        "isConfiguration": false,
+                                        "offRowStorageId": null,
+                                        "sourceEventApiName": "sn_button.NOW_BUTTON#CLICKED",
+                                        "sourceEventCorrelationId": null,
+                                        "sourceEventDefinition": {
+                                            "apiName": "sn_button.NOW_BUTTON#CLICKED",
+                                            "id": null,
+                                            "type": "UXEVENT"
+                                        },
+                                        "sourceEventSysId": null,
+                                        "targets": [
+                                            {
+                                                "broker": null,
+                                                "clientScript": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": {
+                                                    "apiName": "x_quo_coursehub.NAV_ITEM_SELECTED_RELAY_d98c0a0a83bde6107969ba29feaad301",
+                                                    "payload": {
+                                                        "container": {
+                                                            "external": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "fields": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "multiInstField": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "navigationOptions": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "params": {
+                                                                "container": {
+                                                                    "learnerId": {
+                                                                        "binding": {
+                                                                            "address": [
+                                                                                "learnerId"
+                                                                            ]
+                                                                        },
+                                                                        "type": "STATE_BINDING"
+                                                                    }
+                                                                },
+                                                                "type": "MAP_CONTAINER"
+                                                            },
+                                                            "passiveNavigation": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "redirect": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "route": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": "courses"
+                                                            },
+                                                            "targetRoute": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            },
+                                                            "title": {
+                                                                "type": "JSON_LITERAL",
+                                                                "value": null
+                                                            }
+                                                        },
+                                                        "type": "MAP_CONTAINER"
+                                                    },
+                                                    "sysId": "3433583783b12210519fc3b6feaad323"
+                                                },
+                                                "operation": null,
+                                                "targetId": "ggmNccEPcceeddAkCsjjddiiFvarjytqaa",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "XccMlIfrLDUxXjjSgOHQggNRdkE",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "QHwVggeehhfTBkPCeeddPkMnyffZccPtK",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "waqnIfUggDUHIjjXIADlmiSbsgg",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "rSQDQPttAaakPjjuaaIBCXhpcub",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "eehhjjSEdPKvAkeehhMjjrAIrccnXajjzbb",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "AhRddVgArDUeeddggeeddLAPceeddDICzyii",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "QOyikfJPDaaWIjjjjACtAJuFijz",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "LHThbPxmBkccPjjcoPReehhqEnvqx",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "ddtddRffPSjBESdjjzcOccXaaZVANH",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "ZXFkDeehhMhhBkqpeeddAeeBSQrjFxbM",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "qiiddbbbwDGCUJsjjkYCddSZWNaiS",
+                                                "type": "EVENT"
+                                            },
+                                            {
+                                                "clientScript": null,
+                                                "clientTransformScript": null,
+                                                "clientTransformScriptUxValue": null,
+                                                "conditional": null,
+                                                "declarativeAction": null,
+                                                "event": null,
+                                                "operation": null,
+                                                "targetId": "AshzddgCHCaaKljjdMLobbONdPIW",
+                                                "type": "EVENT"
+                                            }
+                                        ]
+                                    }
+                                ],
+                                "isHidden": null,
+                                "preset": null,
+                                "propertyValues": {
+                                    "animatedIcon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "configAria": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "disabled": {
+                                        "script": {
+                                            "apiVersion": "2.0.0",
+                                            "controllerElementId": null,
+                                            "inlineScript": null,
+                                            "scriptSysId": "b37cf045830aa610519fc3b6feaad385",
+                                            "target": null
+                                        },
+                                        "type": "CLIENT_TRANSFORM_SCRIPT"
+                                    },
+                                    "icon": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "agent-transfer-outline"
+                                    },
+                                    "label": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": "Login"
+                                        }
+                                    },
+                                    "landmark": {
+                                        "type": "JSON_LITERAL",
+                                        "value": null
+                                    },
+                                    "size": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "lg"
+                                    },
+                                    "tooltipContent": {
+                                        "type": "TRANSLATION_LITERAL",
+                                        "value": {
+                                            "code": null,
+                                            "comment": "",
+                                            "message": ""
+                                        }
+                                    },
+                                    "variant": {
+                                        "type": "JSON_LITERAL",
+                                        "value": "primary"
+                                    }
+                                },
+                                "slot": null,
+                                "styles": {
+                                    "default": {
+                                        "align-self": "center",
+                                        "margin-top": "var(--now-scalable-space--xl)"
                                     }
                                 }
                             }
@@ -86,7 +994,19 @@
                                 "children": null,
                                 "items": [
                                     {
-                                        "element_id": "heading_1"
+                                        "element_id": "avatar_1"
+                                    },
+                                    {
+                                        "element_id": "title"
+                                    },
+                                    {
+                                        "element_id": "search_box"
+                                    },
+                                    {
+                                        "element_id": "search_results"
+                                    },
+                                    {
+                                        "element_id": "login_button"
                                     }
                                 ],
                                 "root": null,
@@ -237,10 +1157,78 @@
     }
 ]</composition>
         <da_relay_models/>
-        <data>[]</data>
+        <data>[
+    {
+        "definition": {
+            "id": "b997a84053021010cbc2ddeeff7b1228",
+            "type": "COMPOSITE"
+        },
+        "elementId": "fetch_all_learners",
+        "elementLabel": "Fetch Learners Table",
+        "eventMappings": [],
+        "inputValues": {
+            "encodedQuery": {
+                "transform": {
+                    "operands": {
+                        "container": [
+                            {
+                                "type": "JSON_LITERAL",
+                                "value": "user_account.nameLIKE"
+                            },
+                            {
+                                "binding": {
+                                    "address": [
+                                        "searchText"
+                                    ]
+                                },
+                                "type": "STATE_BINDING"
+                            }
+                        ],
+                        "type": "LIST_CONTAINER"
+                    },
+                    "operator": "CONCAT"
+                },
+                "type": "CLIENT_TRANSFORM"
+            },
+            "limit": {
+                "type": "JSON_LITERAL",
+                "value": "1000"
+            },
+            "offset": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "orderBy": {
+                "type": "JSON_LITERAL",
+                "value": null
+            },
+            "queryCategory": {
+                "type": "JSON_LITERAL",
+                "value": ""
+            },
+            "returnFieldMetadata": {
+                "type": "JSON_LITERAL",
+                "value": false
+            },
+            "returnFields": {
+                "type": "JSON_LITERAL",
+                "value": "user_account.name,user_account.email"
+            },
+            "sortType": {
+                "type": "JSON_LITERAL",
+                "value": "asc"
+            },
+            "table": {
+                "type": "JSON_LITERAL",
+                "value": "x_quo_coursehub_learner"
+            }
+        },
+        "readEvaluationMode": "EAGER"
+    }
+]</data>
         <description/>
         <disable_auto_reflow>false</disable_auto_reflow>
-        <dispatched_events/>
+        <dispatched_events>3433583783b12210519fc3b6feaad323</dispatched_events>
         <ext_controller_dep/>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <extension_point/>
@@ -265,7 +1253,13 @@
         "root": null,
         "rules": null,
         "styles": {
-            "flex-direction": "column"
+            "display": "flex",
+            "flex-direction": "column",
+            "margin-left": "var(--now-scalable-space--lg)",
+            "padding-bottom": "var(--now-scalable-space--lg)",
+            "padding-left": "var(--now-scalable-space--lg)",
+            "padding-right": "var(--now-scalable-space--lg)",
+            "padding-top": "var(--now-scalable-space--lg)"
         },
         "templateId": "5832fd4d53c31010e6bcddeeff7b12db",
         "type": "flex"
@@ -291,7 +1285,19 @@
         <output_prop_mapping/>
         <props>[]</props>
         <required_translations>[ {
-  "message" : "We make course subscription workflow FUN",
+  "message" : "CourseHub Logo",
+  "comment" : ""
+}, {
+  "message" : "Enter your username",
+  "comment" : ""
+}, {
+  "message" : "Login",
+  "comment" : ""
+}, {
+  "message" : "Type your name...",
+  "comment" : ""
+}, {
+  "message" : "Welcome to CourseHub",
   "comment" : ""
 } ]</required_translations>
         <root_component/>
@@ -299,20 +1305,49 @@
         <root_component_definition/>
         <schema_version>1.0.0</schema_version>
         <state_persistence_config/>
-        <state_properties>[]</state_properties>
+        <state_properties>[
+    {
+        "id": "",
+        "initialValue": null,
+        "name": "learnerId",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "id": "dm47Fa47NZBEap9xALDDAZiTf47",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": null
+        },
+        "name": "searchText",
+        "shape": "",
+        "valueType": "string"
+    },
+    {
+        "fieldType": "boolean",
+        "id": "O2glY47c0BUE29UgJEdWrampA",
+        "initialValue": {
+            "type": "JSON_LITERAL",
+            "value": true
+        },
+        "name": "showResults",
+        "shape": "",
+        "valueType": "boolean"
+    }
+]</state_properties>
         <style_config>{}</style_config>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-05-30 12:01:39</sys_created_on>
         <sys_id>d98c0a0a83bde6107969ba29feaad301</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>135</sys_mod_count>
         <sys_name>Home - default</sys_name>
         <sys_package display_value="CourseHub" source="x_quo_coursehub">d7affc501bf0ded0afce657a234bcb67</sys_package>
         <sys_policy/>
         <sys_scope display_value="CourseHub">d7affc501bf0ded0afce657a234bcb67</sys_scope>
         <sys_update_name>sys_ux_macroponent_d98c0a0a83bde6107969ba29feaad301</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-05-30 12:13:01</sys_updated_on>
+        <sys_updated_on>2025-06-08 23:11:23</sys_updated_on>
     </sys_ux_macroponent>
     <sys_translated_text action="delete_multiple" query="documentkey=d98c0a0a83bde6107969ba29feaad301"/>
 </record_update>
