@@ -1,0 +1,15 @@
+1. Install Python (if not already installed): https://www.python.org/downloads/
+
+2. Open your terminal or command prompt.
+
+3. Install required packages and initialize Playwright browsers:
+   pip install robotframework robotframework-browser playwright
+   rfbrowser init
+
+4. Run the test suite:
+   robot tests/course_subscription.robot
+
+# Notes:
+- Ensure you have an active internet connection to download browser binaries during 'rfbrowser init'.
+- The tests use Chromium browser by default.
+- Modify variables in the .robot file if you want to change URL, browser type, or credentials.

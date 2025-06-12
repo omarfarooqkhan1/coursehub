@@ -23,7 +23,13 @@ This project is a prototype ServiceNow application that allows **learners to vie
   - User gets a modal with coming soon mentioned (Not implemented because **Learner** cannot unsubscribe).
 - Prevents duplicate subscriptions by conditionally showing **Subscribe** and **Unsubscribe** buttons.
 
----
+### QA01: Tests
+- A Robot Framework test suite was created to test the **Course Subscription** feature.
+- ✅ **Given**: Learner can see a list of courses with `Subscribe` button.
+- 🎯 **When**: Learner clicks on the `Subscribe` button, and presses `Yes` button in the confirmation modal.
+- 🔍 **Then**: The system verifies that the learner has successfully subscribed (button changes to `Unsubscribe`).
+- Test suite uses reusable CSS selectors and runs end-to-end from login to course subscription.
+- Please refer to `tests/how_to_run.txt` for running the test suite
 
 ## 🔐 Learner Login Simulation
 
@@ -48,7 +54,6 @@ This project is a prototype ServiceNow application that allows **learners to vie
 
 - Learner cannot Unsubscribe (as per business rule restriction)
 - No authentication or sys_user-level login (simulated via dropdown)
-- Robot Framework test automation suite
 
 ---
 
